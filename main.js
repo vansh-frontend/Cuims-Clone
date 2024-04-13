@@ -38,6 +38,13 @@ function handleKeyPress(event) {
   }
 }
 
+// search in mobile input
+function searchOnGoogle() {
+  var searchQuery = document.getElementById('searchInputt').value;
+  var searchURL ='https://www.google.com/search?q='+searchQuery;
+  window.open(searchURL,'_blank');
+}
+
 // image open js
 function showFullscreen(img) {
   // Get the full screen image element and set its src
