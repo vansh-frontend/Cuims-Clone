@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width:7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:red; /* Change to desired color */
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#333;
+  border-radius: 15px;
+}
+
+body {
+  background-color: #fdfff5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height: auto;
+  width: auto;
+
+  flex-wrap: wrap;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.half {
+  flex: 1;
+  height: 50%;
+  position: absolute;
+  width: 100%;
+}
+
+.white {
+  background-color: white;
+  top: 300px;
+  left: 0;
+
+}
+
+.red {
+  background-color: red;
+  bottom: -75px;
+  left: 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  line-height: 20px;
+}
+
+
+.cardsec {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin:20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin:20px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #f8f9f5;
+  border-radius: 15px;
+  height: 50vh;
+  width: 295px;
+  flex-wrap: wrap;
+
+
+}
+/* 
+.card:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+}
+.cardsec:hover > :not(:hover){
+  opacity: 0.3;
+} */
+
+.card > img {
+ object-fit: cover;
+  height: 55px;
+  margin: 30px 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 7px 20px;
+  margin-top: 25px;
+}
+
+.card h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.card p{
+  font-size: 14px;
+  font-weight: 200;
+  margin-left: 20px;
+  color: #333;
+}
+
+.card button {
+  width: 110px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  margin: 50px  20px;
+  font-size: 14px;
+}
+#admission{
+  margin: 90px 20px;
+}
+#staff{
+  margin: 70px 20px;
+}
+
+.card > button:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.card > button:active {
+  background-color:#444;
+  color:white;
+  transform: scale(0.89); 
+}
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 768px) {
+  body{
+    background-size:cover ;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    overflow: auto;
+  scroll-behavior: smooth;
+  }
+
+
+
+  .logo img {
+    height: 80px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin:20px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #f8f9f5;
+    border-radius: 15px;
+    height:auto;
+    width: auto;
+    flex-wrap: wrap;
+  
+  }
+
+  .card p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .cardsec {
+    margin: 10% 0;
+    background-color: red;
+  }
+}
+
+
+/* For tablets */
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    background-size: cover;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 20px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #f8f9f5;
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .card p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .cardsec {
+    margin: 10% 0;
+    background-color: red;
+  }
+}
+
+
+/* tablets */

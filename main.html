@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<title>Chandigarh University Management</title>
+<link rel="stylesheet" href="main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<b>
+
+
+<div class="main">
+
+  
+  <div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="close nav"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+    <img src="img/cuimslogo.png" alt="cuimslogo" id="cuims">
+    <a  href="#">Academics</a>
+    <a href="#">Account</a>
+    <a href="#">Administration</a>
+    <a href="#">Appy for Loan Documents</a>
+    <a href="#">Appy for NOC</a>
+    <a href="#">DCPD</a>
+    <a href="#">E Library</a>
+    <a href="#">Examinaton</a>
+    <a href="#">Hostel</a>
+    <a href="#">Library</a>
+    <a href="#">My Profile</a>
+    <a href="#">Online Test</a>
+    <a href="#">Student Documents Download</a>
+    <a href="#">DCPD</a>
+    <a href="#">Student Leave Application</a>
+    <a href="#">Student Relation Management System</a>  
+    <a href="#">Transport</a>
+    <a href="#">UCMC</a>
+
+
+
+
+
+
+
+  </div>
+  
+  <div class="mainn">
+    <button class="openbtn" onclick="openNav()" id="btn" title="open nav"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+  </div>
+  
+  
+  <img src="img/cuimslogo.png" alt="cuims logo" title="cuims logo">
+
+
+  <input type="text" id="searchInput" onkeypress="handleKeyPress(event)" placeholder=" Search here & Google here" title="search here....">
+
+
+  <div class="icons">
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#8c8284"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+    </svg>
+
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#595454"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#595454"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-smart-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" /><path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" /></svg>
+
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#595454"  class="icon icon-tabler icons-tabler-filled icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.647 4.081a.724 .724 0 0 0 1.08 .448c2.439 -1.485 5.23 1.305 3.745 3.744a.724 .724 0 0 0 .447 1.08c2.775 .673 2.775 4.62 0 5.294a.724 .724 0 0 0 -.448 1.08c1.485 2.439 -1.305 5.23 -3.744 3.745a.724 .724 0 0 0 -1.08 .447c-.673 2.775 -4.62 2.775 -5.294 0a.724 .724 0 0 0 -1.08 -.448c-2.439 1.485 -5.23 -1.305 -3.745 -3.744a.724 .724 0 0 0 -.447 -1.08c-2.775 -.673 -2.775 -4.62 0 -5.294a.724 .724 0 0 0 .448 -1.08c-1.485 -2.439 1.305 -5.23 3.744 -3.745a.722 .722 0 0 0 1.08 -.447c.673 -2.775 4.62 -2.775 5.294 0zm-2.647 4.919a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+    
+    
+  </div>
+
+  <div class="account">
+    <b id="user">Vansh</b>
+    <p id="userid">22BCA10001</p>
+  </div>
+
+  <div class="accountlogo">
+    <div class="vansh">
+        <img src="img/vansh.jpeg" alt="vansh image" onclick="showFullscreen(this)" title="CLICK on image">
+    </div>
+</div>
+
+<!-- Fullscreen image display -->
+<div id="fullscreenImg" class="fullscreen-img" onclick="hideFullscreen()">
+    <img src="img/vansh.jpeg" alt="">
+</div>
+    
+  </div>
+</div>
+  <hr class="hr1">
+<!-- box html -->
+
+<div class="box">
+  <ul>
+    <input type="search" id="searchInput" onkeypress="handleKeyPress(event)" placeholder=" Search here & Google here" title="search here....">
+    <button id="btn1" title="Important links"> <p>Important Link
+    <li><a href="#">CLICK HERE</a></li>
+  </p></button>
+  
+    
+  <button id="btn2" title="student inform"><p>Student Facilitaion
+    <li><a href="#">CLICK TO VIEW</a></li>
+  </p></button>
+
+    <button id="btn3" title="anti Ragging"><p>Anti Ragging
+      <li><a href="#">READ NOW</a></li>
+    </p></button>
+
+    <button id="btn4" title="University mail"><p>MY University Email
+      <li><a href="#">VIEW DETAILS</a></li>
+    </p></button>
+
+  </div>
+    <!-- blue button -->
+    <div class="btnn">
+      <button   class="btn5" id="btn5" title="Weather"><p>
+        Chandigarh</p>
+        <p>University
+        </p>
+        <p id="p">Weather</p>
+
+<p id="deg">25&deg;C</p>
+        <p id="deg1">few clouds</p>
+        
+      </button>
+      <div class="btnn1">
+        
+        <b class="b">
+          Download Virtual ID Card
+          <button id="btnnow" title="Virtual id card"><strong>Download Now</strong></button>
+          </b>
+          </div>
+          </div>
+  
+
+      
+ 
+
+      <!-- after blue white button id card -->
+
+
+
+
+<div class="myinfo">
+  <div class="aboutme">
+
+      <p>Important message</p>
+
+      <div class="boxmain">
+        <b>1.Pending Documents: The Status of Pending Documents is as given below, you are required to submit the same in Block-1 &LeftAngleBracket; Room No.208 &LeftAngleBracket;General category&RightAngleBracket; and Room NO. 204 &LeftAngleBracket;Scholarship stds.&RightAngleBracket;&LeftAngleBracket;Abbreviation: MIG: Migration,/CHAR/CHR:Character,DIP:Diploma,ORG:Orginal&RightAngleBracket;</b>
+        <br>
+        <strong>Document Remarks:No Documents Documents</strong> 
+      </div>
+      
+  </div>
+  
+<div class="mycarrier">
+<b>My Course & Attendance</b>
+<p>Bachelor of Computer Application</p>
+<div class="table">
+  <table>
+  <tr>
+    <th>Subject</th>
+    <th>Sem.</th>
+    <th>%</th>
+  </tr>
+
+  <tr>
+    <td>Web technology</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+  <tr>
+    <td>social media analysis</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+  <tr>
+    <td>software testing</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+  <tr>
+    <td>Business intelligence</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+  <tr>
+    <td>computer network</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+
+  <tr>
+    <td>communication skills</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+
+  <tr>
+    <td>DBMS</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+
+  <tr>
+    <td>DSA</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+
+  <tr>
+    <td>JAVA</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+
+  <tr>
+    <td>C#  hybrid</td>
+    <td>5</td>
+    <td>100%</td>
+  </tr>
+
+</table>
+
+
+</div>
+
+
+
+</div>
+<div class="announce">
+  <div class="inform">
+    <h1>Announcement (ALL)</h1>
+    <input type="search" placeholder="   Search Announcement">    
+    
+<label for="lists"></label>
+
+<select id="list" name="list">
+  <option value="All">ALL</option>
+  <option value="Academics">Academics</option>
+  <option value="Account">Accounts</option>
+  <option value="Examinaton">Examinaton</option>
+</select>
+<br>
+<b>📌"CU PROJECTS EXPO 2024" ON SATURDAY,APRIL 6TH,2024</b>
+<p>We are exited to announce that <strong>Chandigarh University</strong> will be hosting the <strong>CU PROJECTS EXPO2 2024" On Saturday</strong>,April 6th,2024.Kindaly note the following schedule for student vists during the expo:</p>
+
+<b class="b1">Date: Saturday,April 6th,2024</b>
+<p>Event is at <strong  >North Campus:.</strong>Auditorium block E2</p>
+<strong>Timming:12:55 Pm to 3:55 Pm</strong>
+<h4>Uploaded By: VANSH DHALOR</h4>
+
+  </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- last section -->
+
+
+<div class="rights">
+  <p>Developed By VANSH DHALOR</p>
+  <ul class="bottom">
+
+
+    <a href="#"><img src="img/faviconinsta.png" alt="instagram" height="30px" title="instagram"></a>
+
+    <a href="#"><img src="img/faviconwha.png" alt="whatsapp" height="30px" id="whatsapp" title="whatsapp"></a>
+
+    
+    <a href="https://www.linkedin.com/in/vansh-dhalor-000a7524a/"><img src="img/favicon (1).ico" alt="" height="30px" title="linkdin"></a>
+
+
+    <a href="https://github.com/vansh-frontend"  id="git"><img src="img/favicon.ico" alt="" title="github"></a>
+
+    <a href="contact.html" target="_self"><img src="img/gmail.ico" alt="gmail" height="32px" title="gmail"></a>
+
+    
+ </ul>
+</div>  
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
