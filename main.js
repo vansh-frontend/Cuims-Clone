@@ -21,29 +21,27 @@ window.onload = function() {
 
 
 
-
-
 // search like google
-function searchOnGoogle() {
-  var searchQuery = document.getElementById('searchInput').value;
-  var searchURL ='https://www.google.com/search?q='+searchQuery;
-  window.open(searchURL,'_blank');
-}
+function handleKeyPress(event, device) {
+  // Check if Enter key is pressed
+  if (event.keyCode === 13 || event.which === 13) {
+    // Determine which input field to use based on the device
+    var searchQuery;
+    if (device === 'desktop') {
+      searchQuery = document.getElementById('searchInputDesktop').value;
+    } else if (device === 'mobile') {
+      searchQuery = document.getElementById('searchInputMobile').value;
+    }
 
+    // Construct the search URL
+    var searchURL = 'https://www.google.com/search?q=' + encodeURIComponent(searchQuery);
 
-// event listener for press eneter for search on google
-function handleKeyPress(event) {
-  if (event.key === 'Enter') {
-    searchOnGoogle();
+    // Open the search URL in a new tab
+    window.open(searchURL, '_blank');
   }
 }
+// ends here search google
 
-// search in mobile input
-function searchOnGoogle() {
-  var searchQuery = document.getElementById('searchInputt').value;
-  var searchURL ='https://www.google.com/search?q='+searchQuery;
-  window.open(searchURL,'_blank');
-}
 
 
 // image open js
