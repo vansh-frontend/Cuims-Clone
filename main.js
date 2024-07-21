@@ -21,6 +21,8 @@ window.onload = function() {
 
 
 
+
+
 // search like google
 function handleKeyPress(event, device) {
   // Check if Enter key is pressed
@@ -40,9 +42,6 @@ function handleKeyPress(event, device) {
     window.open(searchURL, '_blank');
   }
 }
-// ends here search google
-
-
 
 
 // image open js
