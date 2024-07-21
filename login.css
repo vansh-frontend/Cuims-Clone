@@ -20,8 +20,13 @@
   border-radius: 15px;
 }
 body{
+<<<<<<< HEAD
   /* background: url('img/Screenshot\ \(1156\).png'); */
   background-image: url("https://source.unsplash.com/random/1920x1080");
+=======
+/*   background: url('img/Screenshot\ \(1156\).png'); */
+   background-image: url("https://source.unsplash.com/random/1920x1080"); /* Background image */
+>>>>>>> d2689d8d4b397c3bf2730669f3e392e979e5c5c4
   background-size: cover;
   background-position: center;
  background-repeat: no-repeat;
@@ -325,8 +330,13 @@ p{
   border-radius: 15px;
 }
 body{
+<<<<<<< HEAD
   /* background: url('img/Screenshot\ \(1156\).png'); */
   background-image: url("https://source.unsplash.com/random/1920x1080");
+=======
+/*   background: url('img/Screenshot\ \(1156\).png'); */
+     background-image: url("https://source.unsplash.com/random/1920x1080"); /* Background image */
+>>>>>>> d2689d8d4b397c3bf2730669f3e392e979e5c5c4
   background-size: cover;
   background-position: center;
  background-repeat: no-repeat;

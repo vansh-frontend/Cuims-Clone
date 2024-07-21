@@ -20,6 +20,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
 }
+<<<<<<< HEAD
 body {
   background-size: cover;
   background-position: center;
@@ -31,6 +32,20 @@ body {
   background-image: url("https://source.unsplash.com/random/1920x1080"); /* Background image random */
   margin: 0;
   padding: 0;
+=======
+body{
+/*  background:url('img/Screenshot\ \(1156\).png'); */
+   background-image: url("https://source.unsplash.com/random/1920x1080"); /* Background image */
+  background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 80vh;
+ font-family: "Poppins", sans-serif;
+ font-weight: 100;
+ font-style: normal;
+>>>>>>> d2689d8d4b397c3bf2730669f3e392e979e5c5c4
 }
 .login {
   display: flex;
@@ -260,6 +275,7 @@ button[type="submit"]:hover {
     border-radius: 15px;
   }
 
+<<<<<<< HEAD
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -277,6 +293,25 @@ button[type="submit"]:hover {
     font-weight: 100;
     font-style: normal;
   }
+=======
+::-webkit-scrollbar-thumb {
+  background-color:rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+body{
+/*  background:url('img/Screenshot\ \(1156\).png'); */
+     background-image: url("https://source.unsplash.com/random/1920x1080"); /* Background image */
+  background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 80vh;
+ font-family: "Poppins", sans-serif;
+ font-weight: 100;
+ font-style: normal;
+}
+>>>>>>> d2689d8d4b397c3bf2730669f3e392e979e5c5c4
 
   .login {
     display: flex;
