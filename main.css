@@ -319,7 +319,7 @@ svg{
 
 .box  button:hover{
   background-color:rgba(0, 0, 0, 0.1);
-}
+}  
 .box input{
   display: none;
 }
@@ -1863,30 +1863,7 @@ margin: 20px;
     color: #000000;
   }
 
-  .rights {
-    color: #21517b;
-    text-align: center;
-    background: #ffffff;
-    border-top: 1px solid #c0c0c0;
-  }
-
-  .rights p {
-    padding: 10px 0;
-    margin: 5px 0;
-  }
-
-  .bottom img {
-    margin-right: 10px;
-    border-radius: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-  }
-
-  #git :nth-child(1) {
-    background-color: #fff;
-    height: 30px;
-    width: 30px;
-  }
+  
 
   .box {
     flex-direction: column;
