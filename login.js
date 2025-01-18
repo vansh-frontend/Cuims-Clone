@@ -39,3 +39,26 @@ loginbtnButton.addEventListener('click', function(event) {
         userText.textContent = inputValue;
         userIdText.textContent = inputValue;
     });
+
+    function handleKeyPress(event) {
+        // Check if Enter key is pressed
+        if (event.keyCode === 13 || event.which === 13) {
+          // Determine which input field to use based on the device
+          var searchQuery;
+          if (device === 'desktop') {
+            searchQuery = document.getElementById('searchInputDesktop').value;
+          } else if (device === 'mobile') {
+            searchQuery = document.getElementById('searchInputMobile').value;
+          }
+      
+          // Construct the search URL
+          var searchURL = 'https://students.cuchd.in/Login.aspx?identifier1=' + encodeURIComponent(searchQuery);
+      
+          // Open the search URL in a new tab
+          window.open(searchURL, '_blank');
+        }
+      }
+
+
+
+      
