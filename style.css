@@ -97,15 +97,6 @@ body, html {
 
 
 }
-/* 
-.card:hover {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
-  transform: scale(1.05);
-}
-.cardsec:hover > :not(:hover){
-  opacity: 0.3;
-} */
-
 .card > img {
  object-fit: cover;
   height: 55px;
@@ -126,7 +117,7 @@ body, html {
 
 .card p{
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   margin-left: 20px;
   color: #333;
 }
